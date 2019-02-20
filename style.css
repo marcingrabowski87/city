@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: rgb(236, 214, 9);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bloks-wall img {
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+article p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.social-media {
+    background-color: #000;
+    z-index: 1;
+}
+
+.social-media li {
+    padding: 10px 0 10px 0;
+}
+
+.social-media li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.img-blocks {
+    background-image: url(img/blocks2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 300px;
+}
+
+.blocks {
+    position: relative;
+}
+
+.blocks p {
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 10px 10px;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+}
+
+.author {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.section-left p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.img-Linda {
+    text-align: center;
+}
+
+.section-left p:nth-child(3) {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.section-left p:nth-child(4) {
+    padding: 0 10px;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav li:first-child {
+    padding-bottom: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 50px;
+}
+
+button {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-style: none;
+    animation: shake 3s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    2% {
+        transform: translate(3px, 0);
+    }
+    4% {
+        transform: translate(0, 0);
+    }
+    6% {
+        transform: translate(3px, 0);
+    }
+    8% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(3px, 0);
+    }
+    12% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+nav ul a,
+button {
+    background-color: rgb(236, 214, 9);
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section-right::before {
+    position: absolute;
+    border: 1px solid #000;
+    content: "";
+    width: 50%;
+    display: inline-block;
+    left: 50%;
+    top: -19px;
+    transform: translateX(-50%);
+}
+
+.section-right {
+    position: relative;
+    margin-top: 40px;
+}
+
+.section-right p:first-child {
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+
+.section-right p:last-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+}
+
+@media(min-width:533px) and (orientation: landscape) and (max-width:1023px) {
+    .bloks-wall {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:768px) {
+    .author {
+        margin-top: 60px;
+    }
+}
+
+@media(min-width:1024px) {
+    h1 {
+        width: 60%;
+        text-align: right;
+        padding-right: 20px;
+        position: relative;
+        top: 0;
+        left: 10%;
+    }
+    .bloks-wall {
+        width: 50%;
+        margin-top: -28.5px;
+        float: left;
+    }
+    .bloks-wall img {
+        height: 1071px;
+    }
+    .social-media {
+        width: 80px;
+        height: 200px;
+    }
+    article {
+        float: left;
+        width: 40%;
+        padding-left: 10px;
+        margin-top: 100px;
+        position: relative;
+    }
+    article .title {
+        padding-left: 10px;
+    }
+    article p,
+    article .title {
+        text-align: left;
+    }
+    .social-media {
+        position: absolute;
+        height: 210px;
+        top: 280px;
+        right: 0;
+    }
+    .blocks::before {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .img-blocks {
+        margin-top: 20px;
+    }
+    .author {
+        margin-top: 50px;
+    }
+    .img-blocks+p {
+        width: 72%;
+        text-align: right;
+        padding: 25px 25px 25px 150px;
+        margin-left: 6%;
+    }
+    .blocks p {
+        bottom: 35px;
+    }
+    .img-blocks {
+        width: 90%;
+        margin-left: 10%;
+    }
+    .section-left {
+        text-align: left;
+        float: left;
+        width: 60%;
+        margin-left: 10%;
+    }
+    .img-Linda {
+        text-align: left;
+        width: 100px;
+        float: left;
+    }
+    .img-Linda img {
+        width: 100px;
+    }
+    .section-right {
+        float: left;
+        width: 20%;
+        margin-top: 68px;
+    }
+    section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    section.author {
+        position: relative;
+    }
+    .nav-down {
+        position: absolute;
+        left: 0;
+        bottom: -120px;
+        width: 50%;
+        font-size: 0;
+    }
+    .bottom-nav li,
+    .bottom-nav button {
+        display: inline-block;
+    }
+    nav ul {
+        text-align: left;
+    }
+    nav ul li a {
+        text-align: center;
+        font-size: 16px;
+    }
+    .nav-down {
+        margin-left: 10%;
+        width: 50%;
+    }
+    nav {
+        float: left;
+    }
+    button {
+        margin-top: 20px;
+    }
+    .author {
+        text-align: left;
+    }
+    .section-right p:first-child,
+    .section-right p:first-child+p {
+        text-align: center;
+    }
+    .section-left p:nth-child(4) {
+        padding: 0;
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 20px;
+    }
+    .section-left p:nth-child(3) {
+        padding: 0 120px;
+    }
+    nav ul li:nth-child(2),
+    button {
+        margin-left: 30px;
+    }
+    .section-right::before {
+        display: none;
+    }
+    .section-right {
+        border-left: 1px solid #000;
+    }
+}
+
+@media(min-width:1366px) {
+    .bloks-wall img {
+        height: 850px;
+    }
+    .blocks p {
+        padding-left: 30%;
+    }
+}
+
+@media(min-width:1601px) {
+    article p:nth-child(2),
+    article p:nth-child(3),
+    article p:nth-child(4) {
+        padding-right: 32%;
+    }
+}
